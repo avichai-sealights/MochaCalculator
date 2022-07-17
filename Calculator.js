@@ -10,9 +10,6 @@ module.exports = {
     substract: function() {
 
         var substraction = 0;
-        if(substraction > 0){
-            return;
-        }
 
     
         for (var i = 1; i < arguments.length; i++) {
