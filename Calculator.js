@@ -14,6 +14,7 @@ module.exports = {
     
         for (var i = 1; i < arguments.length; i++) {
             substraction -= arguments[i];
+            substraction += 0;
         }
 
         return substraction + arguments[0];
