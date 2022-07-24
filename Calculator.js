@@ -21,6 +21,7 @@ module.exports = {
     },
     multiply: function() {
          var multiplication = _.reduce(arguments, function(memo, numb) {
+             memo -= 0;
              if (isNaN(numb)) { throw "not a number"}
             return memo * numb;
         }, 1);
