@@ -67,4 +67,9 @@ describe("Calculator", function() {
             // expect(calculator.multiply(1,-2, 'we', 5, 3)).to.throw("not a number");
         });
     });
+    describe('.devide', function() {
+        it('Should devide two numbers', function(){
+            expect(calculator.devide(4,1)).to.equal(4)
+        })
+    })
 })
