@@ -9,7 +9,7 @@ module.exports = {
     },
     substract: function() {
 
-        var substraction = 0;
+        var substraction = 1;
 
     
         for (var i = 1; i < arguments.length; i++) {
@@ -21,9 +21,18 @@ module.exports = {
     multiply: function() {
          var multiplication = _.reduce(arguments, function(memo, numb) {
              memo -= 0;
-             if (isNaN(numb)) { throw "not a number"}
-            return memo * numb;
+             console.log('this is a change')
+             if (isNaN(numb)) { throw "not a number [ALSO A CHANGE]"}
+             return memo * numb;
         }, 1);
         return multiplication;
+    },
+    devide: function() {
+        var devide = _.reduce(arguments, function(memo, numb) {
+            memo -= 0;
+            console.log('this is a change')
+            if (isNaN(numb)) { throw "not a number [ALSO A CHANGE]"}
+            return memo / numb;
+        }, 1)
     }
 }
