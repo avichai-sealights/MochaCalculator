@@ -62,9 +62,14 @@ describe("Calculator", function() {
             expect(calculator.multiply(-5,5,5,5)).to.equal(-625);
         });
         it("Should throw an exception if any of the items in the array is not a number", function(){
-            // expect(calculator.multiply(1,-2, 4, 5, {})).to.throw("not a number");
-            // //expect(calculator.multiply(1,-2, 4, {}, 34)).to.throw(/not a number/);
-            // expect(calculator.multiply(1,-2, 'we', 5, 3)).to.throw("not a number");
+            expect(calculator.multiply(1,-2, 4, 5, {})).to.throw("not a number");
+            expect(calculator.multiply(1,-2, 4, {}, 34)).to.throw(/not a number/);
+            expect(calculator.multiply(1,-2, 'we', 5, 3)).to.throw("not a number");
         });
     });
+    describe('.devide', function() {
+        it('Should devide two numbers', function(){
+            expect(calculator.devide(4,1)).to.equal(4)
+        })
+    })
 })
